@@ -17,9 +17,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-video="ManimBannerScene.mp4"
-						data-background-opacity="0.1" data-background-video-loop data-background-video-muted
-						data-transition="zoom">
+				<section>
 					<img data-src="escudo.svg" style="position: absolute; top: 0;left: -10%;" width="15%">
 					<h2>Un nuevo enfoque para enseñar matemáticas a través de animaciones</h2>
 					<hr>
@@ -64,6 +62,89 @@
 						<video data-autoplay loop src="RiemannSum.mp4"></video>
 					</section>
 				</section>
+				<section>
+					<section>
+						<h2 style="font-size: 48pt;">¿Cómo puedo hacer animaciones de matemáticas?</h2>
+						<hr>
+						<div style="border-radius: 10px;border-style: solid;border-width: 3px;background-color: rgba(255,255,255,0.2);
+								padding: 15px;">
+							<h3 style="color: #fff;font-size: 40pt;">After Effects</h5>
+							<ul style="font-size: 20pt;">
+								<li>Es un software de Adobe que sirve para realizar animaciones.</li>
+								<li>Es muy potente, pero tiene una curva de aprendizaje muy grande.</li>
+								<li>Pese a su potencia, para realizar animaciones de matemáticas, se requiere automatizar muchas cosas.</li>
+								<li>Ello requiere <i>scripting</i>, sin embargo, en After Effects posee un <i>scripting</i> muy básico.</li>
+								<li>Pese a lo anterior, sería muy útil para un proceso de posproducción.</li>
+								<li>Es muy caro, y no es software libre.</li>
+							</ul>
+							<img data-src="ae.svg" style="position: absolute; bottom: 0;right: -20%;" width="15%">
+						</div>
+					</section>
+					<section>
+						<h2 style="font-size: 48pt;">¿Cómo puedo hacer animaciones de matemáticas?</h2>
+						<hr>
+						<div style="border-radius: 10px;border-style: solid;border-width: 3px;background-color: rgba(255,255,255,0.2);
+								padding: 15px;">
+							<h3 style="color: #fff;font-size: 40pt;">Blender</h5>
+							<ul style="font-size: 20pt;">
+								<li>Es un software de modelado y animación 3D.</li>
+								<li>Es software libre, y tiene una comunidad muy grande.</li>
+								<li>Es muy potente, pero tiene una curva de aprendizaje muy grande.</li>
+								<li>Es muy útil para realizar animaciones de matemáticas, pero requiere automatizar muchas cosas.</li>
+								<li>Ello requiere <i>scripting</i>, y Blender posee un <i>scripting</i> muy potente.</li>
+								<li>Es muy útil para un proceso de posproducción.</li>
+							</ul>
+							<img data-src="blender.svg" style="position: absolute; bottom: 0;right: -27%;" width="25%">
+					</section>
+					<section>
+						<h2 style="font-size: 48pt;">¿Cómo puedo hacer animaciones de matemáticas?</h2>
+						<hr>
+						<div style="border-radius: 10px;border-style: solid;border-width: 3px;background-color: rgba(255,255,255,0.2);
+								padding: 15px;">
+							<h3 style="color: #fff;font-size: 40pt;">Morpholib</h5>
+							<ul style="font-size: 20pt;">
+								<li>Es una librería de Python de animaciones en general.</li>
+								<li>Es software libre, pero no tiene una comunidad muy grande.</li>
+								<li>No es tan potente como Manim, y su curva de aprendizaje es muy grande.</li>
+								<li>Es útil para realizar animaciones de matemáticas, y al estar en un lenguaje de programación, facilita la producción.</li>
+								<li>Es útil para la producción.</li>
+							</ul>
+						</div>
+						<img data-src="morpho.png" style="position: absolute; bottom: 0;right: -27%;" width="25%">
+					</section>
+					<section>
+						<h2 style="font-size: 48pt;">¿Cómo puedo hacer animaciones de matemáticas?</h2>
+						<hr>
+						<div style="border-radius: 10px;border-style: solid;border-width: 3px;background-color: rgba(255,255,255,0.2);
+								padding: 15px;">
+							<h3 style="color: #fff;font-size: 40pt;">Reanimate</h5>
+							<ul style="font-size: 20pt;">
+								<li>Es una librería de Haskell de animaciones en general.</li>
+								<li>Es software libre, pero no tiene una comunidad muy grande.</li>
+								<li>No es tan potente como Manim, y su curva de aprendizaje es muy grande.</li>
+								<li>Es útil para realizar animaciones de matemáticas, y al estar en un lenguaje de programación, facilita la producción.</li>
+								<li>Es útil para la producción.</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2 style="font-size: 48pt;">¿Cómo puedo hacer animaciones de matemáticas?</h2>
+						<hr>
+						<div style="border-radius: 10px;border-style: solid;border-width: 3px;background-color: rgba(255,255,255,0.2);
+								padding: 15px;">
+							<h3 style="color: #fff;font-size: 40pt;">Manim</h5>
+							<ul style="font-size: 20pt;">
+								<li>Es una librería de Python de animaciones de matemáticas.</li>
+								<li>Es software libre, y tiene una comunidad muy grande.</li>
+								<li>Es muy potente, y su curva de aprendizaje es muy grande.</li>
+								<li>Es muy útil para realizar animaciones de matemáticas, y al estar en un lenguaje de programación, facilita la producción.</li>
+								<li>Es muy útil para la producción.</li>
+							</ul>
+						</div>
+						<img data-src="manim.svg" style="position: absolute; bottom: 0;right: -20%;" width="15%">
+						<img data-src="manim.png" style="position: absolute;bottom: 30%;right: -27%;" width="25%">
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -82,6 +163,13 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
+			for (var slide of document.getElementsByTagName('section')){
+				slide.setAttribute('data-background-video', 'ManimBannerScene.mp4')
+				slide.setAttribute('data-background-opacity', '0.1')
+				slide.setAttribute('data-background-video-loop', 'true')
+				slide.setAttribute('data-background-video-muted', 'true')
+				slide.setAttribute('data-transition', 'zoom')
+			}
 		</script>
 	</body>
 </html>
