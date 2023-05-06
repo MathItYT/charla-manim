@@ -4,11 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Charla Manim</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
+		<link rel="icon" type="image/png" href="favicon.png">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +17,53 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-video="ManimBannerScene.mp4"
+						data-background-opacity="0.1" data-background-video-loop data-background-video-muted
+						data-transition="zoom">
+					<img data-src="escudo.svg" style="position: absolute; top: 0;left: -10%;" width="15%">
+					<h2>Un nuevo enfoque para enseñar matemáticas a través de animaciones</h2>
+					<hr>
+					<ul style="font-size: 18pt;">
+						<li>Nombre: Benjamín Ubilla.</li>
+						<li>Carrera: Estudiante de Licenciatura en Ingeniería en Ciencia de Datos UC.</li>
+					</ul>
+					<p>&nbsp</p>
+					<b>¡Recuerden usar sus computadores!</b>
+				</section>
+				<section>
+					<section data-transition="zoom">
+						<h2>Motivación</h2>
+						<hr>
+						<q>Saber que enseñar no es transferir conocimiento, sino crear las posibilidades para su propia producción o construcción</q>
+						<p style="text-align: right;">Paulo Freire</p>
+					</section>
+					<section data-transition="zoom">
+						<h2>Motivación</h2>
+						<hr>
+						<p style="text-align: justify;">Para poder <i>crear las posibilidades para su propia producción o construcción</i>,
+						es muy importante comunicar bien los conceptos previos antes de dejar autonomía al estudiante
+						para que construya conocimiento nuevo.</p>
+					</section>
+					<section data-transition="zoom">
+						<h2>Motivación</h2>
+						<hr>
+						<p style="text-align: justify;">Un recurso muy útil son los diagramas y visualizaciones,
+						y esto es aún mejor si se tiene un resultado bello. Podemos realizar animaciones al
+						estilo <a href="https://youtube.com/@3blue1brown">3Blue1Brown</a>.</p>
+					</section>
+					<section data-transition="zoom">
+						<h2>Motivación</h2>
+						<hr>
+						<p style="text-align: justify;">Como ejercicio motivacional, propongo hacer
+						una animación de la suma de Riemann, más o menos como se ve en la siguiente
+						diapositiva.</p>
+					</section>
+					<section data-transition="zoom">
+						<h2>Motivación</h2>
+						<hr>
+						<video data-autoplay loop src="RiemannSum.mp4"></video>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -25,6 +71,7 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -33,7 +80,7 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
 		</script>
 	</body>
