@@ -59,7 +59,8 @@
 					<section data-transition="zoom">
 						<h2>Motivación</h2>
 						<hr>
-						<video data-autoplay loop src="RiemannSum.mp4"></video>
+						<video data-autoplay loop data-src="RiemannSum.webm">
+						</video>
 					</section>
 				</section>
 				<section>
@@ -144,6 +145,48 @@
 						<img data-src="manim.svg" style="position: absolute; bottom: 0;right: -20%;" width="15%">
 						<img data-src="manim.png" style="position: absolute;bottom: 30%;right: -27%;" width="25%">
 					</section>
+				</section>
+				<section>
+					<h2 style="font-size: 48pt;">¿Qué es Manim?</h2>
+					<hr>
+					<ul style="font-size: 20pt;">
+						<li>Manim es una librería de Python para crear animaciones de matemáticas.</li>
+						<li>Fue creado por Grant Sanderson, más conocido como <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a>.</li>
+						<li>Este es el software que Grant usa para hacer sus videos.</li>
+						<li>El 2020 un grupo de desarrolladores de la comunidad de Manim hizo su propia edición, distinta del
+							original (en ese entonces el cairo-backend).</li>
+						<li>Grant Sanderson hizo una nueva versión de Manim, la cual es desde el 2021 la original,
+							llamada ManimGL.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Versiones de Manim</h2>
+					<hr>
+					<ul style="font-size: 20pt;">
+						<li><b>Manim 3b1b cairo-backend</b>: versión anteriormente original de 3b1b que
+							usó para videos antiguos, su forma de renderizar videos es usar Cairo y FFmpeg.</li>
+						<li><b>ManimGL</b>: versión original de 3b1b que usa actualmente para hacer sus videos,
+							su forma de renderizar videos es usar OpenGL y FFmpeg.</li>
+						<li><b>ManimCE</b>: versión comunitaria de Manim que es la más usada por otros usuarios
+							para sus videos. Tiene una excelente documentación y responde rápidamente
+							a cambios que desee la comunidad.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿Cómo funciona Manim?</h2>
+					<hr>
+					<ul style="font-size: 18pt;">
+						<li>Manim usa Python 3.7 o superior para que el usuario pueda escribir sus escenas.</li>
+						<li>Manim usa LaTeX para renderizar texto matemático.</li>
+						<li>Manim usa OpenGL o Cairo para hacer los fotogramas.</li>
+						<li>Manim usa FFmpeg para renderizar videos a partir de los fotogramas.</li>
+					</ul>
+					<figure style="font-size: 12pt;">
+						<img data-src="screenshot_tob.png" width="50%">
+						<figcaption>Manim usa Python, LaTeX, OpenGL/Cairo y FFmpeg.</figcaption>
+						<figcaption>Capturado de <a href="https://www.youtube.com/watch?v=xs_dlmUkWDY">este</a> video de Theorem of Beethoven</figcaption>
+						<figcaption>&nbsp</figcaption>
+					</figure>
 				</section>
 			</div>
 		</div>
