@@ -17,7 +17,11 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section data-background-video="ManimBannerScene.mp4"
+						data-background-opacity="0.1"
+						data-background-video-loop
+						data-background-video-muted
+						data-transition="zoom">
 					<img data-src="escudo.svg" style="position: absolute; top: 0;left: -10%;" width="15%">
 					<h2>Un nuevo enfoque para enseñar matemáticas a través de animaciones</h2>
 					<hr>
@@ -211,14 +215,6 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
-			for (var slide of document.getElementsByTagName('section')){
-				if (slide.getAttribute('data-background-iframe') != null) continue
-				slide.setAttribute('data-background-video', 'ManimBannerScene.mp4')
-				slide.setAttribute('data-background-opacity', '0.1')
-				slide.setAttribute('data-background-video-loop', 'true')
-				slide.setAttribute('data-background-video-muted', 'true')
-				slide.setAttribute('data-transition', 'zoom')
-			}
 		</script>
 	</body>
 </html>
