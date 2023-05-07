@@ -188,6 +188,11 @@
 						<figcaption>&nbsp</figcaption>
 					</figure>
 				</section>
+				<section data-background-iframe="https://docs.manim.community/en/stable/" data-background-interactive>
+					<h5 style="color: #000;">Conoce la documentación en 
+					<br>
+					https://docs.manim.community/en/stable/</h3>
+				</section>
 			</div>
 		</div>
 
@@ -207,6 +212,7 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
 			for (var slide of document.getElementsByTagName('section')){
+				if (slide.getAttribute('data-background-iframe') != null) continue
 				slide.setAttribute('data-background-video', 'ManimBannerScene.mp4')
 				slide.setAttribute('data-background-opacity', '0.1')
 				slide.setAttribute('data-background-video-loop', 'true')
