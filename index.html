@@ -62,7 +62,8 @@
 					<h2 style="font-size: 36pt;">¿Cómo puedo hacer animaciones de matemáticas?</h2>
 					<hr>
 					<section>
-						<div style="border-radius: 10px;border-style: solid;border-width: 3px;background-color: rgba(255,255,255,0.2);">
+						<div style="border-radius: 10px;border-style: solid;border-width: 3px;background-color: rgba(255,255,255,0.2);
+								padding: 15px;">
 							<h3 style="color: #fff;font-size: 24pt;">After Effects</h3>
 							<ul style="font-size: 18pt;">
 								<li>Es un software de Adobe que sirve para realizar animaciones.</li>
@@ -76,7 +77,8 @@
 						</div>
 					</section>
 					<section>
-						<div style="border-radius: 10px;border-style: solid;border-width: 3px;background-color: rgba(255,255,255,0.2);">
+						<div style="border-radius: 10px;border-style: solid;border-width: 3px;background-color: rgba(255,255,255,0.2);
+								padding: 15px;">
 							<h3 style="color: #fff;font-size: 24pt;">Blender</h3>
 							<ul style="font-size: 18pt;">
 								<li>Es un software de modelado y animación 3D.</li>
@@ -176,101 +178,34 @@
 						<figcaption>&nbsp</figcaption>
 					</figure>
 				</section>
-				<section data-background-iframe="https://docs.manim.community/en/stable/" data-background-interactive>
-					<h5 style="color: #000;">Conoce la documentación de ManimCE en 
+				<section>
+					<h4>Conoce la documentación de ManimCE
 					<br>
-					<a href="https://docs.manim.community/en/stable/" style="color: #000;">https://docs.manim.community/en/stable/</a></h3>
-				</section>
-				<section data-background-iframe="https://3b1b.github.io/manim/index.html" data-background-interactive>
-					<h5 style="color: #000;">Conoce la documentación de ManimGL en 
-					<br>
-					<a href="https://3b1b.github.io/manim/index.html" style="color: #000;">https://3b1b.github.io/manim/index.html</a></h3>
+					<a href="https://docs.manim.community">aquí</a></h4>
 				</section>
 				<section>
-					<h2>Ejemplos sencillos: Animación de texto</h2>
+					<h4>Conoce la documentación de ManimGL
+					<br>
+					<a href="https://3b1b.github.io/manim">aquí</a></h4>
+				</section>
+				<section>
+					<h2>Tutorial interactivo</h2>
 					<hr>
-					<section data-auto-animate>
-						<pre><code data-line-numbers class="language-python">from manim import *
-
-
-class AnimacionTexto(Scene):
-	def construct(self):
-		texto = Text("Hola Mundo")
-		self.play(Write(texto))
-		self.wait(1) # Igual que self.wait()
-						</code></pre>
-					</section>
-					<section data-auto-animate>
-						<pre><code data-line-numbers="1" class="language-python">from manim import *
-
-
-class AnimacionTexto(Scene):
-	def construct(self):
-		texto = Text("Hola Mundo")
-		self.play(Write(texto))
-		self.wait(1) # Igual que self.wait()
-						</code></pre>
-					</section>
-					<section data-auto-animate>
-						<pre><code data-line-numbers="4" class="language-python">from manim import *
-
-
-class AnimacionTexto(Scene):
-	def construct(self):
-		texto = Text("Hola Mundo")
-		self.play(Write(texto))
-		self.wait(1) # Igual que self.wait()
-						</code></pre>
-					</section>
-					<section data-auto-animate>
-						<pre><code data-line-numbers="5" class="language-python">from manim import *
-
-
-class AnimacionTexto(Scene):
-	def construct(self):
-		texto = Text("Hola Mundo")
-		self.play(Write(texto))
-		self.wait(1) # Igual que self.wait()
-						</code></pre>
-					</section>
-					<section data-auto-animate>
-						<pre><code data-line-numbers="6" class="language-python">from manim import *
-
-
-class AnimacionTexto(Scene):
-	def construct(self):
-		texto = Text("Hola Mundo")
-		self.play(Write(texto))
-		self.wait(1) # Igual que self.wait()
-						</code></pre>
-					</section>
-					<section data-auto-animate>
-						<pre><code data-line-numbers="7" class="language-python">from manim import *
-
-
-class AnimacionTexto(Scene):
-	def construct(self):
-		texto = Text("Hola Mundo")
-		self.play(Write(texto))
-		self.wait(1) # Igual que self.wait()
-						</code></pre>
-					</section>
-					<section data-auto-animate>
-						<pre><code data-line-numbers="8" class="language-python">from manim import *
-
-
-class AnimacionTexto(Scene):
-	def construct(self):
-		texto = Text("Hola Mundo")
-		self.play(Write(texto))
-		self.wait(1) # Igual que self.wait()
-						</code></pre>
-					</section>
-					<section>
-						<div style="transform: translateY(50%);">
-							<video data-autoplay loop src="AnimacionTexto.webm" width="75%"></video>
-						</div>
-					</section>
+					<ol style="font-size: 18pt;">
+						<li>Instala Python.</li>
+						<li>Instala Manim.</li>
+						<li>Instala JupyterLab con <code>pip install jupyterlab</code>.</li>
+						<li>Ejecuta la terminal en el directorio donde quieras trabajar con Manim y JupyterLab.</li>
+						<li>Corre JupyterLab con <code>jupyter-lab --NotebookApp.tornado_settings='{\"headers\": {\"Content-Security-Policy\": \"frame-ancestors 'https://mathlike.github.io/charla-manim' 'self' \"}}'</code>.</li>
+						<li>Crea un notebook.</li>
+					</ol>
+					<a href="http://localhost:8888/lab">Ve a JupyterLab</a>
+				</section>
+				<section>
+					<h1>¿Preguntas?</h1>
+				</section>
+				<section>
+					<h1>¡Gracias por asistir!</h1>
 				</section>
 			</div>
 		</div>
@@ -287,7 +222,8 @@ class AnimacionTexto(Scene):
 			Reveal.initialize({
 				hash: true,
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+				previewLinks: true
 			});
 		</script>
 	</body>
